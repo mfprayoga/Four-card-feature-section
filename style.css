@@ -9,7 +9,8 @@
 body {
 	font-family: 'Poppins', sans-serif;
 	width: 1440px;
-	margin: 0 auto;
+	max-width: 100%;
+	margin: auto;
 	background-color: hsl(0, 0%, 98%);
 }
 
@@ -89,6 +90,33 @@ main {
 
 .blue {
 	border-top-color: hsl(212, 86%, 64%);
+}
+
+@media screen and (max-width: 1350px) {
+	/* HEADER CONFIGURATION */
+	header {
+		padding: 50px;
+	}
+
+	/* MAIN CONTENT CONFIG */
+	/*main {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+		flex-direction: column;
+		padding: 0 30px;
+	}*/
+}
+
+@media screen and (max-width: 1190px) {
+	/* MAIN CONTENT CONFIG */
+	main {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+		flex-direction: column;
+		padding: 0 30px;
+	}
 }
 
 @media screen and (max-width: 680px) {
